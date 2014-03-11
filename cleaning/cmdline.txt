@@ -1,0 +1,50 @@
+  308  starcluster put wikipedia --user myuser ~/Downloads/credentials.csv /home/myuser
+  343  apt-get csvtool
+  349  opaml install csv
+  352  opaml install csv
+  354  opaml install csv
+  355  opam install csv
+  356  wget https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/83716/high-earners-pay-2012.csv
+  357  wc -l high-earners-pay-2012.csv 
+  358  head -n1 high-earners-pay-2012.csv 
+  359  csvtool -u TAB col 5,8-10 high-earners-pay-2012.csv | head -n 5
+  360  csvtool drop 1 high-earners-pay-2012.csv | csvtool -u TAB col 5,8-10 - | sort -t$'\t' -k3rn | head -n 4 | csvtool -t TAB readable -
+  372  cs GADataScience/
+  549  unzip features.csv.zip 
+  551  rm features.csv.zip 
+  552  mv features.csv data/
+  556  unzip test.csv.zip 
+  557  unzip train.csv.zip 
+  561  mv *.csv data/
+  573  head features.csv 
+  574  head stores.csv 
+  575  head test.csv 
+  576  head train.csv 
+  577  vi stores.csv 
+  578  wc-l stores.csv 
+  579  cat stores.csv | wc -l
+  581  cat stores.csv 
+  593  pip install csvkit
+  597  csvcut features.csv 
+  598  csvcut -n features.csv 
+  599  csvcut -c 2,3 | head -n 5
+  600  csvcut -c 2,3 features.csv | head -n 5
+  601  csvcut -c 5,10 features.csv | tail -n 6
+  602  csvcut -c 1,4,9,10 features.csv | csvstat 
+  603  csvlook -n stores.csv 
+  604  csvcut -n stores.csv 
+  605  csvlook | head -n 5
+  606  csvlook features.csv | head -n 5
+  607  csvlook stores.csv | head -n 5
+  608  csvlook stores.csv | head -n 10
+  609  csvlook stores.csv | head -n 10
+  610  csvcut -c 2, "Type" stores.csv | csvgrep -c 2 -m A
+  611  csvcut -c 2,"Type" stores.csv | csvgrep -c 2 -m A
+  612  csvcut -c 2,"Total" stores.csv | csvgrep -c 2 -m A
+  613  csvcut -c 2,"Type" stores.csv | csvgrep -c 2 -m A
+  614  csvcut -c 2,"Type" stores.csv | csvgrep -c 2 -m A | wc -l
+  615  csvcut -c 2,"Type" stores.csv | csvgrep -c 2 -m B | wc -l
+  616  csvcut -c 1,2,3 stores.csv | csvsta
+  617  csvcut -c 1,2,3 stores.csv | csvstat
+  655  history | grep csv*
+  656  history | grep csv* > cmdline.txt
